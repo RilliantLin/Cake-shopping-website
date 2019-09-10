@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<script>
+			var index = 0;
+			
+			function changeImg(){
+				
+				
+				var img = document.getElementById("img1");
+				
+				//计算出当前要切换到第几张图片
+				var curIndex = index%3 + 1;  //0,1,2 
+				img.src="./cake picture/"+curIndex+".jpg";  //1,2,3
+				//每切换完,索引加1
+				index = index + 1;
+			}
+			
+			function init(){
+				
+				setInterval("changeImg()",1500);
+			}
+			
+		</script>
+	</head>
+	<body onload="init()">
+		<img src="./cake picture/1.jpg" width="100%" id="img1"/>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+drop database if exists mybbs;
+
+create database mybbs;
+
+use mybbs;
+CREATE TABLE `forums` (
+`ID` int(11) NOT NULL auto_increment,
+`forum_name` text NOT NULL default '',
+`last_post_author` varchar(50) NOT NULL default '',
+`last_post_time` text NOT NULL default '',
+PRIMARY KEY (`ID`));
+
+INSERT INTO `forums` VALUES ( 1, 'Welcome to piece of cake', 'the Team of Piece of Cake','2018-10-29 08:00:06 am');
+INSERT INTO `forums` VALUES ( 2, 'I ordered a vegan cake in October 2017 and it was fantastic. This shop was helpful and accommodating of my design specifications and the cake really was both pretty and delicious.', 'Jojo','2018-03-29 08:00:06 am');
+INSERT INTO `forums` VALUES ( 3, 'Thank you very much for the cakes they were beautiful , nice and fresh.. ..We really enjoyed them.. ', 'Lily','2018-10-30 08:00:06 am');
+INSERT INTO `forums` VALUES ( 4, ' Wish you all the best and success. ', 'Meimei','2018-11-30 08:00:06 am');
+INSERT INTO `forums` VALUES ( 5, 'it tastes sooo gooood ', 'Meimei','2018-11-30 08:00:06 pm');
+INSERT INTO `forums` VALUES ( 6, 'The service was magnificent and the delivery was timeously.thank you guys. ', 'Kevin','2018-12-30 08:35:06 pm');
+INSERT INTO `forums` VALUES ( 7, 'Thanks once again for the awesome work you did. ', 'Lucy','2019-1-30 08:24:06 pm');
+
+
+
+
+
+
+
+
+
+

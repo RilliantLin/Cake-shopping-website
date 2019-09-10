@@ -1,0 +1,9 @@
+<?php
+session_start();
+if(!isset($_COOKIE['loginusername'])){
+	require("index_nolog.php");
+}
+else{
+	require("index_log.php");
+}
+?>

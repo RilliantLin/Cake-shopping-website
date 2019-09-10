@@ -1,0 +1,13 @@
+<?php
+session_start();
+if(!isset($_COOKIE['loginusername']))
+{ 
+header("Location:./login.php");
+}
+else
+{
+	$quantity=$_POST['quantity'];
+	$_SESSION["quantity"]=$quantity;
+	header("Location:./addtodb.php");
+	}
+?>
